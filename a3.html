@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link type="text/css" rel="stylesheet" href="./a3_participante2_files/bootstrap-primefaces.css.jsf" media="all">
+    <link type="text/css" rel="stylesheet" href="./a3_participante2_files/bootstrap.min.css.jsf" media="all">
+    <link type="text/css" rel="stylesheet" href="./a3_participante2_files/bootstrap-responsive.min.css.jsf" media="all">
+    <link type="text/css" rel="stylesheet" href="./a3_participante2_files/font-awesome.min.css" media="all">
+    <link type="text/css" rel="stylesheet" href="./a3_participante2_files/style.css.jsf" media="all">
+    <link type="text/css" rel="stylesheet" href="./a3_participante2_files/primefaces.css.jsf">
+    <script type="text/javascript" async="" src="./a3_participante2_files/ga.js"></script>
+    <script type="text/javascript" src="./a3_participante2_files/jquery.js.jsf"></script>
+    <script type="text/javascript" src="./a3_participante2_files/jquery-plugins.js.jsf"></script>
+    <script type="text/javascript" src="./a3_participante2_files/primefaces.js.jsf"></script>
+    <script type="text/javascript" src="./a3_participante2_files/jsf.js.jsf"></script>
+    <script type="text/javascript">if (window.PrimeFaces) { }</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+    <title>Painel de Eventos Unichristus</title>
+    <meta name="description" content="Tá a fim de fazer oQ?">
+    <link type="text/css" rel="stylesheet"
+        href="https://eventos.unichristus.edu.br/javax.faces.resource/temas/interno/bootstrap-primefaces.css.jsf"
+        media="all" />
+    <link type="text/css" rel="stylesheet"
+        href="https://eventos.unichristus.edu.br/javax.faces.resource/temas/interno/bootstrap.min.css.jsf"
+        media="all" />
+    <link type="text/css" rel="stylesheet"
+        href="https://eventos.unichristus.edu.br/javax.faces.resource/temas/interno/bootstrap-responsive.min.css.jsf"
+        media="all" />
+
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" media="all" />
+
+    <link type="text/css" rel="stylesheet"
+        href="https://eventos.unichristus.edu.br/javax.faces.resource/temas/interno/style.css.jsf" media="all" />
+
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="canonical" href="https://eventos.unichristus.edu.br/javax.faces.resource/participante/formularios/a3">
+    <link rel="shortcut icon" href="https://eventos.unichristus.edu.br/javax.faces.resource/favicon-oq.ico"
+        type="image/x-icon">
+    <link rel="icon" href="https://eventos.unichristus.edu.br/javax.faces.resource/favicon-oq.ico" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .table td.coluna {
+            padding: 2px;
+        }
+
+        .ui-fileupload .start {
+            display: none;
+        }
+
+        .ui-fileupload .cancel {
+            display: none;
+        }
+
+        .ui-fileupload .progress {
+            display: none;
+        }
+
+        .ui-fileupload-progress {
+            display: none;
+        }
+
+        .center-export-bar {
+            display: block;
+            color: #595959;
+            padding: 10px 15px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if le IE 9]>
+<p class="chromeframe">Você está usando um navegador <strong>desatualizado</strong>. Por favor <a href="http://browsehappy.com/">atualize seu navegador</a> ou utilize outro.</p><![endif]-->
+
+    <header class="clearfix">
+        <form id="barraMenu" name="barraMenu" method="post"
+            action="https://eventos.unichristus.edu.br/javax.faces.resource/participante/formularios/a3"
+            enctype="application/x-www-form-urlencoded">
+            <input type="hidden" name="barraMenu" value="barraMenu">
+            <nav class="navbar navbar-static-top clearfix">
+                <div class="navbar-inner">
+                    <div class="container">
+
+                        <ul class="nav pull-right">
+                            <li class="dropdown">
+                                <a href="https://eventos.unichristus.edu.br/javax.faces.resource/participante/formularios/a3#"
+                                    class="btn btn-custom dropdown-toggle usuario-menu" data-toggle="dropdown"
+                                    data-original-title="" title="">
+                                    Participante 41 <i class="fa fa-caret-down fa-fw"></i>
+                                </a>
+
+                                <ul class="dropdown-menu pull-right">
+
+
+                                    <li><a id="barraMenu:alterarSenhaBnt" name="barraMenu:alterarSenhaBnt"
+                                            href="https://eventos.unichristus.edu.br/javax.faces.resource/participante/altera"
+                                            data-original-title="" title="">Alterar Senha</a>
+                                    </li>
+
+                                    <li><a id="barraMenu:editarUsuarioBnt" name="barraMenu:editarUsuarioBnt"
+                                            href="http://localhost:8080/participante/edita" data-original-title=""
+                                            title="">Editar Perfil</a>
+                                    </li>
+
+                                    <li class="divider"></li>
+
+                                    <li>
+                                        <a id="paginaExtBtn" class="text-primary" href="http://localhost:8080/"
+                                            data-original-title="" title="">
+                                            Página Inicial
+                                        </a>
+                                    </li>
+
+                                    <li><a id="barraMenu:sairBnt" name="barraMenu:sairBnt"
+                                            href="http://localhost:8080/logout" data-original-title="" title="">Sair</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="nav-collapse collapse navbar-responsive-collapse">
+                            <ul class="nav" id="menu">
+                                <li><a id="barraMenu:eventosParticipanteBtn" name="barraMenu:eventosParticipanteBtn"
+                                        href="http://localhost:8080/participante/transacoes"
+                                        style="width: 80px;line-height: 16px" data-original-title="" title="">
+                                        <div class="icone">
+                                            <i class="fa fa-bars fa-2x fa-center"></i>
+                                        </div>
+                                        <div class="legenda">Meus Comprovantes</div>
+                                    </a>
+                                </li>
+                                <li><a id="barraMenu:formulariosParticipanteBtn"
+                                        name="barraMenu:formulariosParticipanteBtn"
+                                        href="http://localhost:8080/participante/formularios"
+                                        style="width: 80px;line-height: 16px" data-original-title="" title="">
+                                        <div class="icone">
+                                            <i class="fa fa-list-alt fa-2x fa-center"></i>
+                                        </div>
+                                        <div class="legenda">Minhas Atividades</div>
+                                    </a>
+                                </li>
+                                <li><a id="barraMenu:anuncioPadrao" name="barraMenu:anuncioPadrao"
+                                        href="http://localhost:8080/participante/declaracoesCertificados"
+                                        style="width: 86px;line-height: 16px" data-original-title="" title="">
+                                        <div class="icone">
+                                            <i class="fa fa-file-text-o fa-2x fa-center"></i>
+                                        </div>
+                                        <div class="legenda">Declarações e Certificados</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="btn btn-navbar btn-block btn-custom usuario-menu" data-toggle="collapse"
+                        data-target=".nav-collapse" data-original-title="" title="">
+                        <i class="fa fa-bars fa-fw "></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="menu-barra"></div><input type="hidden" name="javax.faces.ViewState"
+                id="j_id1:javax.faces.ViewState:0" value="-3908931595951864690:-6024489485344348189" autocomplete="off">
+        </form>
+        <form id="j_idt33" name="j_idt33" method="post" action="http://localhost:8080/participante/formularios/a3"
+            enctype="application/x-www-form-urlencoded">
+            <input type="hidden" name="j_idt33" value="j_idt33">
+
+            <nav class="acoes"><a href="http://localhost:8080/participante/formularios" class="btn btn-custom"
+                    data-original-title="" title="">Voltar</a>
+            </nav><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:1"
+                value="-3908931595951864690:-6024489485344348189" autocomplete="off">
+        </form>
+    </header>
+
+    <div class="container" id="content">
+        <div class="bottom-footer-hack">
+            <form id="dataForm" name="dataForm" method="post" action="http://localhost:8080/participante/formularios/a3"
+                class="form-horizontal" enctype="application/x-www-form-urlencoded">
+                <input type="hidden" name="dataForm" value="dataForm">
+
+                <section class="conteudo row-fluid">
+                    <section>
+                        <header class="clearfix">
+                            <hgroup>
+                                <h1>Teste pdf A3
+                                </h1>
+                            </hgroup>
+                        </header>
+
+                        <input type="hidden" name="dataForm:formA3" value="dataForm:formA3">
+                        <div id="dataForm:tituloPanel" class="row-fluid">
+                            <div class="control-group"><label class="control-label"><span
+                                        class="asterisco">*</span>Descrição da Atividade Desenvolvida <i
+                                        id="dataForm:atividadeDesenvolvidaTooltip"
+                                        class="fa fa-question-circle"></i></label>
+
+                                <div class="controls"><textarea id="dataForm:atividadeDesenvolvidaInput"
+                                        name="dataForm:atividadeDesenvolvidaInput" class="input-block-level"
+                                        onkeyup="charactersLeft(this, 240);" rows="3"
+                                        onblur="mojarra.ab(this,event,&#39;blur&#39;,&#39;@this&#39;,&#39;dataForm:a3Save&#39;)"
+                                        minlength="240"
+                                        placeholder="Faça um breve relatório da atividade desenvolvida, ressaltando os pontos considerados mais importantes para sua formação profissional. (Mínimo 240 caracteres)"
+                                        autofocus="autofocus"></textarea>
+                                    <div class="ui-message ui-staticmessage ui-message-warn">
+                                        <span class="ui-message-warn-detail">Faltam 240 caracteres</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dataForm:conteudoPanel" class="row-fluid">
+                            <div class="control-group"><label class="control-label"><span
+                                        class="asterisco">*</span>Análise do Conteúdo</label>
+
+                                <div class="controls">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" style="width: 656px">
+                                                    <label>CONTEÚDO</label></th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="coluna" style="width: 656px">A atividade atendeu aos
+                                                    objetivos determinados.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt54:0:j_idt59"
+                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:0:j_idt59"
+                                                                        id="dataForm:j_idt54:0:j_idt59:0" value="NÃO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:0:j_idt59:0"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:0:j_idt59"
+                                                                        id="dataForm:j_idt54:0:j_idt59:1"
+                                                                        value="NÃO SE APLICA"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:0:j_idt59:1"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO SE APLICA</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:0:j_idt59"
+                                                                        id="dataForm:j_idt54:0:j_idt59:2" value="SIM"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:0:j_idt59:2"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        SIM</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="coluna" style="width: 656px">Obtive êxito na assimilação do
+                                                    conteúdo ministrado.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt54:1:j_idt59"
+                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:1:j_idt59"
+                                                                        id="dataForm:j_idt54:1:j_idt59:0" value="NÃO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:1:j_idt59:0"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:1:j_idt59"
+                                                                        id="dataForm:j_idt54:1:j_idt59:1"
+                                                                        value="NÃO SE APLICA"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:1:j_idt59:1"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO SE APLICA</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:1:j_idt59"
+                                                                        id="dataForm:j_idt54:1:j_idt59:2" value="SIM"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:1:j_idt59:2"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        SIM</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="coluna" style="width: 656px">O conhecimento adquirido irá
+                                                    contribuir para o meu desempenho no curso.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt54:2:j_idt59"
+                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:2:j_idt59"
+                                                                        id="dataForm:j_idt54:2:j_idt59:0" value="NÃO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:2:j_idt59:0"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:2:j_idt59"
+                                                                        id="dataForm:j_idt54:2:j_idt59:1"
+                                                                        value="NÃO SE APLICA"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:2:j_idt59:1"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO SE APLICA</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:2:j_idt59"
+                                                                        id="dataForm:j_idt54:2:j_idt59:2" value="SIM"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:2:j_idt59:2"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        SIM</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="coluna" style="width: 656px">O conhecimento adquirido irá
+                                                    contribuir para o meu desempenho no exercício da minha profissão.
+                                                </td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt54:3:j_idt59"
+                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:3:j_idt59"
+                                                                        id="dataForm:j_idt54:3:j_idt59:0" value="NÃO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:3:j_idt59:0"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:3:j_idt59"
+                                                                        id="dataForm:j_idt54:3:j_idt59:1"
+                                                                        value="NÃO SE APLICA"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:3:j_idt59:1"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO SE APLICA</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:3:j_idt59"
+                                                                        id="dataForm:j_idt54:3:j_idt59:2" value="SIM"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:3:j_idt59:2"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        SIM</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="coluna" style="width: 656px">Foi possível alinhar o
+                                                    conhecimento adquirido em sala de aula com a atividade realizada.
+                                                </td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt54:4:j_idt59"
+                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:4:j_idt59"
+                                                                        id="dataForm:j_idt54:4:j_idt59:0" value="NÃO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:4:j_idt59:0"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:4:j_idt59"
+                                                                        id="dataForm:j_idt54:4:j_idt59:1"
+                                                                        value="NÃO SE APLICA"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:4:j_idt59:1"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO SE APLICA</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:4:j_idt59"
+                                                                        id="dataForm:j_idt54:4:j_idt59:2" value="SIM"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:4:j_idt59:2"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        SIM</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="coluna" style="width: 656px">A atividade possibilitou a
+                                                    formação de caráter humanístico e técnico científico.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt54:5:j_idt59"
+                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:5:j_idt59"
+                                                                        id="dataForm:j_idt54:5:j_idt59:0" value="NÃO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:5:j_idt59:0"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:5:j_idt59"
+                                                                        id="dataForm:j_idt54:5:j_idt59:1"
+                                                                        value="NÃO SE APLICA"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:5:j_idt59:1"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO SE APLICA</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:5:j_idt59"
+                                                                        id="dataForm:j_idt54:5:j_idt59:2" value="SIM"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:5:j_idt59:2"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        SIM</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="coluna" style="width: 656px">Foi possível desenvolver uma
+                                                    postura crítica e científica fazendo um paralelo da atividade com a
+                                                    situação social, política e econômica vigente.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt54:6:j_idt59"
+                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:6:j_idt59"
+                                                                        id="dataForm:j_idt54:6:j_idt59:0" value="NÃO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:6:j_idt59:0"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:6:j_idt59"
+                                                                        id="dataForm:j_idt54:6:j_idt59:1"
+                                                                        value="NÃO SE APLICA"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:6:j_idt59:1"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO SE APLICA</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:6:j_idt59"
+                                                                        id="dataForm:j_idt54:6:j_idt59:2" value="SIM"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:6:j_idt59:2"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        SIM</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="coluna" style="width: 656px">Foi possível aprender sobre a
+                                                    utilização de instrumentos e técnicas da minha área.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt54:7:j_idt59"
+                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:7:j_idt59"
+                                                                        id="dataForm:j_idt54:7:j_idt59:0" value="NÃO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:7:j_idt59:0"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:7:j_idt59"
+                                                                        id="dataForm:j_idt54:7:j_idt59:1"
+                                                                        value="NÃO SE APLICA"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:7:j_idt59:1"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO SE APLICA</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:7:j_idt59"
+                                                                        id="dataForm:j_idt54:7:j_idt59:2" value="SIM"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:7:j_idt59:2"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        SIM</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="coluna" style="width: 656px">Recomendo esta atividade para os
+                                                    meus colegas de curso.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt54:8:j_idt59"
+                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:8:j_idt59"
+                                                                        id="dataForm:j_idt54:8:j_idt59:0" value="NÃO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:8:j_idt59:0"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:8:j_idt59"
+                                                                        id="dataForm:j_idt54:8:j_idt59:1"
+                                                                        value="NÃO SE APLICA"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:8:j_idt59:1"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        NÃO SE APLICA</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt54:8:j_idt59"
+                                                                        id="dataForm:j_idt54:8:j_idt59:2" value="SIM"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt54:8:j_idt59:2"
+                                                                        style="border-top: 0; display: inline;margin: -3px 0 0;">
+                                                                        SIM</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dataForm:satisfatorioPanel" class="row-fluid">
+                            <div class="control-group"><label class="control-label"><span
+                                        class="asterisco">*</span>Ainda com relação à atividade</label>
+
+                                <div class="controls">
+                                    <table class="table table-hover dt-body-right" style="margin-bottom: 0px">
+                                        <thead style="margin-bottom: 0px">
+                                            <tr style="margin-bottom: 0px">
+                                                <th scope="col" style="width: 636px">
+                                                    <label>ORGANIZAÇÃO</label></th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="margin-bottom: 0px">
+                                            <tr style="margin-bottom: 0px">
+                                                <td class="coluna" style="width: 636px">Divulgação do evento.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt69:0:j_idt74"
+                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt69:0:j_idt74"
+                                                                        id="dataForm:j_idt69:0:j_idt74:0"
+                                                                        value="INSATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt69:0:j_idt74:0"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        INSATISFATÓRIO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt69:0:j_idt74"
+                                                                        id="dataForm:j_idt69:0:j_idt74:1"
+                                                                        value="SATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt69:0:j_idt74:1"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        SATISFATÓRIO</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <div class="controls">
+                                    <table class="table table-hover dt-body-right" style="margin-bottom: 0px">
+                                        <thead style="margin-bottom: 0px">
+                                            <tr style="margin-bottom: 0px">
+                                                <th scope="col" style="width: 636px">
+                                                    <label>ATIVIDADE</label></th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="margin-bottom: 0px">
+                                            <tr style="margin-bottom: 0px">
+                                                <td class="coluna" style="width: 636px">Carga horária da atividade.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt78:0:j_idt83"
+                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt78:0:j_idt83"
+                                                                        id="dataForm:j_idt78:0:j_idt83:0"
+                                                                        value="INSATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt78:0:j_idt83:0"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        INSATISFATÓRIO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt78:0:j_idt83"
+                                                                        id="dataForm:j_idt78:0:j_idt83:1"
+                                                                        value="SATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt78:0:j_idt83:1"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        SATISFATÓRIO</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr style="margin-bottom: 0px">
+                                                <td class="coluna" style="width: 636px">Conteúdo da atividade.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt78:1:j_idt83"
+                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt78:1:j_idt83"
+                                                                        id="dataForm:j_idt78:1:j_idt83:0"
+                                                                        value="INSATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt78:1:j_idt83:0"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        INSATISFATÓRIO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt78:1:j_idt83"
+                                                                        id="dataForm:j_idt78:1:j_idt83:1"
+                                                                        value="SATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt78:1:j_idt83:1"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        SATISFATÓRIO</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr style="margin-bottom: 0px">
+                                                <td class="coluna" style="width: 636px">Recursos necessários para
+                                                    execução das atividades.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt78:2:j_idt83"
+                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt78:2:j_idt83"
+                                                                        id="dataForm:j_idt78:2:j_idt83:0"
+                                                                        value="INSATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt78:2:j_idt83:0"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        INSATISFATÓRIO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt78:2:j_idt83"
+                                                                        id="dataForm:j_idt78:2:j_idt83:1"
+                                                                        value="SATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt78:2:j_idt83:1"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        SATISFATÓRIO</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <div class="controls">
+                                    <table class="table table-hover dt-body-right" style="margin-bottom: 0px">
+                                        <thead style="margin-bottom: 0px">
+                                            <tr style="margin-bottom: 0px">
+                                                <th scope="col" style="width: 636px">
+                                                    <label>PROFESSOR</label></th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="margin-bottom: 0px">
+                                            <tr style="margin-bottom: 0px">
+                                                <td class="coluna" style="width: 636px">Domínio do conteúdo.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt87:0:j_idt92"
+                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt87:0:j_idt92"
+                                                                        id="dataForm:j_idt87:0:j_idt92:0"
+                                                                        value="INSATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt87:0:j_idt92:0"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        INSATISFATÓRIO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt87:0:j_idt92"
+                                                                        id="dataForm:j_idt87:0:j_idt92:1"
+                                                                        value="SATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt87:0:j_idt92:1"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        SATISFATÓRIO</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr style="margin-bottom: 0px">
+                                                <td class="coluna" style="width: 636px">Interação com a turma.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt87:1:j_idt92"
+                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt87:1:j_idt92"
+                                                                        id="dataForm:j_idt87:1:j_idt92:0"
+                                                                        value="INSATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt87:1:j_idt92:0"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        INSATISFATÓRIO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt87:1:j_idt92"
+                                                                        id="dataForm:j_idt87:1:j_idt92:1"
+                                                                        value="SATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt87:1:j_idt92:1"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        SATISFATÓRIO</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr style="margin-bottom: 0px">
+                                                <td class="coluna" style="width: 636px">Gestão do tempo.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt87:2:j_idt92"
+                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt87:2:j_idt92"
+                                                                        id="dataForm:j_idt87:2:j_idt92:0"
+                                                                        value="INSATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt87:2:j_idt92:0"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        INSATISFATÓRIO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt87:2:j_idt92"
+                                                                        id="dataForm:j_idt87:2:j_idt92:1"
+                                                                        value="SATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt87:2:j_idt92:1"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        SATISFATÓRIO</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr style="margin-bottom: 0px">
+                                                <td class="coluna" style="width: 636px">Condução das atividades.</td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt87:3:j_idt92"
+                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt87:3:j_idt92"
+                                                                        id="dataForm:j_idt87:3:j_idt92:0"
+                                                                        value="INSATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt87:3:j_idt92:0"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        INSATISFATÓRIO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt87:3:j_idt92"
+                                                                        id="dataForm:j_idt87:3:j_idt92:1"
+                                                                        value="SATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt87:3:j_idt92:1"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        SATISFATÓRIO</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <div class="controls">
+                                    <table class="table table-hover dt-body-right" style="margin-bottom: 0px">
+                                        <thead style="margin-bottom: 0px">
+                                            <tr style="margin-bottom: 0px">
+                                                <th scope="col" style="width: 636px">
+                                                    <label>AVALIAÇÃO GERAL</label></th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="margin-bottom: 0px">
+                                            <tr style="margin-bottom: 0px">
+                                                <td class="coluna" style="width: 636px">Avalie o seu grau de satisfação.
+                                                </td>
+                                                <td class="coluna">
+                                                    <table id="dataForm:j_idt96:0:j_idt101"
+                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                        <tbody>
+                                                            <tr
+                                                                style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt96:0:j_idt101"
+                                                                        id="dataForm:j_idt96:0:j_idt101:0"
+                                                                        value="INSATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt96:0:j_idt101:0"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        INSATISFATÓRIO</label></td>
+                                                                <td
+                                                                    style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                    <input type="radio"
+                                                                        name="dataForm:j_idt96:0:j_idt101"
+                                                                        id="dataForm:j_idt96:0:j_idt101:1"
+                                                                        value="SATISFATÓRIO"
+                                                                        onchange="mojarra.ab(this,event,&#39;change&#39;,0,0)"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;"><label
+                                                                        for="dataForm:j_idt96:0:j_idt101:1"
+                                                                        style="border-top: 0; display: inline;;margin: -3px 0 0;">
+                                                                        SATISFATÓRIO</label></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dataForm:sugestaoPanel" class="row-fluid">
+                            <div class="control-group"><label class="control-label"><span
+                                        class="asterisco">*</span>Sugestão de atividades</label>
+
+                                <div class="controls"><textarea id="dataForm:sugestaoInput"
+                                        name="dataForm:sugestaoInput" class="input-block-level" rows="3"
+                                        onblur="mojarra.ab(this,event,&#39;blur&#39;,&#39;@this&#39;,0)"
+                                        placeholder="Sugestões."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dataForm:dificuldadesPanel" class="row-fluid">
+                            <div class="control-group"><label class="control-label"><span
+                                        class="asterisco">*</span>Dificuldades encontradas</label>
+
+                                <div class="controls"><textarea id="dataForm:dificuldadeInput"
+                                        name="dataForm:dificuldadeInput" class="input-block-level" rows="3"
+                                        onblur="mojarra.ab(this,event,&#39;blur&#39;,&#39;@this&#39;,0)"
+                                        placeholder="Dificuldades."></textarea>
+                                </div>
+                            </div>
+                        </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:2"
+                            value="-3908931595951864690:-6024489485344348189" autocomplete="off">
+
+                    </section>
+                </section>
+            </form>
+            <nav class="acoes"><input id="dataForm:a3Save" type="submit" name="dataForm:a3Save" value="Salvar"
+                    class="btn btn-custom"><input id="dataForm:jsClick" type="submit" name="dataForm:jsClick" value=""
+                    style="display: none;" onclick="mojarra.ab(this,event,&#39;click&#39;,0,0);return false">
+            </nav><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:3"
+                value="-3908931595951864690:-6024489485344348189" autocomplete="off">
+
+
+        </div>
+    </div>
+
+    <footer class="clearfix">
+        <nav class="clearfix"><a href="http://localhost:8080/perfil/empresa/listar" data-original-title=""
+                title="">Início</a><a href="http://localhost:8080/sobre" data-original-title="" title="">Sobre</a><a
+                href="http://localhost:8080/faleconosco" data-original-title="" title="">Contato</a>
+        </nav>
+        <div class="cc">LCR. Todos os direitos reservados</div>
+        <div class="logo"><img src="./a3_participante2_files/logo-60x45.png.jsf" alt="logo">
+        </div>
+    </footer>
+    <!--[if lt IE 9]>
+<script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script><![endif]-->
+    <script type="text/javascript" src="./a3_participante2_files/bootstrap.min.js.jsf"></script>
+
+    <script>
+        /* //<![CDATA[ */
+        // Uncheck radio buttons on A3 form (primeira lista de radio)
+        var uncheckOthers = function (radio, coluna) {
+            var elements = Array.from(radio.form.elements);
+            var objects = [];
+            var i;
+
+            elements.map(function (element, index) {
+                if (radio.name === element.name) {
+                    i = index;
+                }
+            })
+
+            if (coluna === 0) {
+                elements[i + 1].checked = false;
+                elements[i + 2].checked = false;
+            } else if (coluna === 1) {
+                elements[i - 1].checked = false;
+                elements[i + 1].checked = false;
+            } else {
+                elements[i - 1].checked = false;
+                elements[i - 2].checked = false;
+            }
+        }
+
+        // Uncheck radio buttons on A3 form (segunda lista de radio)
+        var uncheck = function (radio, coluna) {
+            var elements = Array.from(radio.form.elements);
+            var objects = [];
+            var i;
+
+            elements.map(function (element, index) {
+                if (radio.name === element.name) {
+                    i = index;
+                }
+            })
+
+            if (coluna === 0) {
+                elements[i + 1].checked = false;
+            }
+            else {
+                elements[i - 1].checked = false;
+            }
+        }
+
+        // Exibir exclamação quando radio estiver vazio, e verificar se os inputs de texto estão preenchidos no formulário de A3
+        var count = 0;
+        $('.acoes input[name*="a3Save"]').on('click', function (event) {
+            debugger;
+            var lista = Array.from($('.coluna'));
+            var campos = Array.from($('textarea'));
+            var retorno;
+            var countCheck = 0;
+            var unchecked = [];
+
+            lista.map(function (e, index) {
+
+                //nesse If so entra as td com os inputs
+                if (e.cellIndex === 1) {
+                    if ($(lista[index + 2]).length !== 0) {
+                        
+                        if (($(lista[index + 2])[0].cellIndex === 3)) {
+                            for (var i = 0; i < 3; i++) {
+                                if ($(lista[index + i]).find('input')[0].checked === false) {
+                                    countCheck = countCheck + 1;
+                                }
+                                else {
+                                    $(lista[index - 1]).find('i').removeClass('fa fa-exclamation');
+                                    count = count + 1;
+                                }
+                            }
+
+                            if (countCheck >= 3) {
+                                if (/^[0-9a-zA-Z]+$/.test(lista[(i + index) - 4].textContent[0])) {
+                                    unchecked.push($(lista[(i + index) - 4]));
+                                    countCheck = 0;
+                                }
+                            }
+                        }
+                        else {
+                            for (var i = 0; i < 2; i++) {
+                                if ($(lista[index + i]).find('input')[0].checked === false) {
+                                    countCheck = countCheck + 1;
+                                }
+                                else {
+                                    $(lista[index - 1]).find('i').removeClass('fa fa-exclamation');
+                                    count = count + 1;
+                                }
+
+                                if (countCheck === 2) {
+                                    if (i === 1 && /^[0-9a-zA-Z]+$/.test(lista[(i + index) - 2].textContent[0])) {
+                                        unchecked.push($(lista[(i + index) - 2]));
+                                        countCheck = 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else {
+                        for (var i = 0; i < 2; i++) {
+                            if ($(lista[index + i]).find('input').checked === false) {
+                                countCheck = countCheck + 1;
+                            }
+                            else {
+                                $(lista[index - 1]).find('i').removeClass('fa fa-exclamation');
+                                count = count + 1;
+                            }
+
+                            if (countCheck === 2) {
+                                if (i === 1 && /^[0-9a-zA-Z]+$/.test(lista[(i + index) - 2].textContent[0])) {
+                                    unchecked.push($(lista[(i + index) - 2]));
+                                }
+                            }
+                        }
+                    }
+
+                    unchecked.map(function (u) {
+                        if ($(u).find('i').length === 0) {
+                            $(u).append(' <i class="fa fa-exclamation" style="color: red"></i>');
+                        }
+                    })
+                }
+            })
+
+            if (window.location.href.indexOf("/formularios/a3") > -1) {
+                var textSize1 = $('textarea[id*="atividadeDesenvolvidaInput"]')[0].value.length;
+                var textSize2 = $('textarea[id*="sugestaoInput"]')[0].value.length;
+                var textSize3 = $('textarea[id*="dificuldadeInput"]')[0].value.length;
+
+                var limit1 = $('textarea[id*="atividadeDesenvolvidaInput"]').attr('minlength');
+
+                if ((textSize1 < parseInt(limit1) || textSize2 == 0 || textSize3 == 0)) {
+                    event.preventDefault();
+
+                    if (textSize2 == 0) {
+                        $('textarea[id*="sugestaoInput"]').attr('style', 'border-color: red;');
+                    }
+                    else {
+                        $('textarea[id*="sugestaoInput"]').attr('style', 'border-color: #cccccc;');
+                    }
+
+                    if (textSize3 == 0) {
+                        $('textarea[id*="dificuldadeInput"]').attr('style', 'border-color: red;');
+                    }
+                    else {
+                        $('textarea[id*="sugestaoInput"]').attr('style', 'border-color: #cccccc;');
+                    }
+                } else if (count >= 18) {
+                    $('input[name*="jsClick"]').click();
+                }
+            }
+        })
+
+        // Mostra quantos caracteres faltam em mensagem abaixo do input de atividades no formulário A3
+        var charactersLeft = function (e, size) {
+            var element = $(e).next();
+            var left = size - parseInt($(e)[0].value.length);
+
+            if (left >= 0) {
+                element[0].textContent = "";
+                element[0].append('Faltam ' + left + ' characters.');
+            }
+            else {
+                element[0].textContent = "";
+                element[0].append('Faltam 0 characters.');
+            }
+        }
+
+        // Bloqueia botão de emissão de certificados/comprovantes
+        var bloqueiaEmissao = function (e) {
+            var element = $(e);
+
+            if (element.attr('class').indexOf('disabled') > -1) {
+                element.first().removeAttr('onclick');
+            }
+        }
+/* //]]> */
+    </script>
+ 
+    <script type="text/javascript"
+        src="https://eventos.unichristus.edu.br/javax.faces.resource/a3_participante2_files/oqunichristus.js.jsf"></script>
+    <div id="textarea_simulator" style="position: absolute; top: 0px; left: 0px; visibility: hidden;"></div>
+    <div id="dataForm:j_idt46" class="ui-tooltip ui-widget ui-widget-content ui-shadow ui-corner-all">Exemplo: "O evento
+        tratou-se de uma palestra que trouxe especialistas no tema, e foi essencial para trazer clareza ao mesmo."</div>
+
+</body>
+
+</html>
